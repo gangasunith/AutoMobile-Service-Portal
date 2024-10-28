@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>ASP2</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+ 
+    <center>
+    <table class="tab">
+        <tr>
+            <td>
+                <div class="div-1">
+           
+            
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off" >
+                
+                    <div >
+                        <label  class="names"><strong>Full Name*</strong></label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div >
+                        <label class="names"><strong>Vehicle</strong></label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div >
+                        <label class="names"><strong>Model</strong></label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div class="loc-div ">
+                        <label class="location names" >Location:</label>
+                        <select class="location-in" name="location" id="location">
+                            <option>Ameerpet</option>
+                            <option>Begumpet</option>
+                            <option>Madhapur</option>
+                            <option>Uppal</option>
+                            <option>Miyapur</option>
+                            <option>Dilsukhnagar</option>
+                            <option>JBS Parade Ground</option>
+                            <option>Jubilee hills</option>
+                            <option>Kukatpally</option>
+                            <option>Secunderabad</option>
+                        </select>
+                        
+                    </div>
+                    <div class="loc-div">
+                        <label class="date names" for="date">Date:</label>
+                        <input class="data-in" type="date" name="date" id="date">
+                
+                    </div>
+                    <div class="loc-div">
+                        <label class="time names">Time slot:</label>
+                        <select class="time-in" name="city" id="city">
+                            <option>10:00Am-11:00AM</option>
+                            <option>11:00Am-12:00PM</option>
+                            <option>12:00Am-1:00Pm</option>
+                            <option>1:00Am-2:00Pm</option>
+                            <option>3:00Am-4:00Pm</option>
+                            <option>4:00Am-5:00Pm</option>
+                            <option>5:00Am-6:00Pm</option>
+                            <option>6:00Am-7:00Pm</option>
+                            <option>7:00Am-8:00Pm</option>
+                            <option>8:00Am-9:00Pm</option>
+                        </select>
+                        <!-- <input type="time" name="city" id="city"> -->
+                    </div>
+                    <div  class="form-action-buttons" ><label>
+                        <input type="submit" value="Submit" onclick="onFormSubmit();"></label>
+                    </div>
+                
+               
+                </form>
+                </div>
+            </td>
+        </table>
+            <td>
+           
+                <div class="div-2" >
+
+              <!--Table to list all records--> 
+              <table class="list tab-2" id="employeeList" >
+                <thead>
+                  
+                    <tr >
+                        <th>Full Name</th>
+                        <th>Vehicle</th>
+                        <th>Model</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Time slot</th>
+                        <th></th>
+                    </tr>
+                
+                </thead>
+                <tbody>
+
+                </tbody>
+            
+                </div>
+              </td>
+              </tr>
+      
+                <tbody>
+
+                </tbody>
+            
+                </div>
+              </td>
+              </tr>
+              </table>
+            </center>
+    <script src="script.js"></script>
+
+     
+</body>
+</html>
